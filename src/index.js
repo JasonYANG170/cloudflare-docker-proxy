@@ -5,18 +5,27 @@ addEventListener("fetch", (event) => {
 
 const dockerHub = "https://registry-1.docker.io";
 
-const routes = {
-  // production
-  "docker.libcuda.so": dockerHub,
-  "quay.libcuda.so": "https://quay.io",
-  "gcr.libcuda.so": "https://gcr.io",
-  "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-  "k8s.libcuda.so": "https://registry.k8s.io",
-  "ghcr.libcuda.so": "https://ghcr.io",
-  "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
+// const routes = {
+//   // production
+//   "docker.libcuda.so": dockerHub,
+//   "quay.libcuda.so": "https://quay.io",
+//   "gcr.libcuda.so": "https://gcr.io",
+//   "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
+//   "k8s.libcuda.so": "https://registry.k8s.io",
+//   "ghcr.libcuda.so": "https://ghcr.io",
+//   "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
 
-  // staging
-  "docker-staging.libcuda.so": dockerHub,
+//   // staging
+//   "docker-staging.libcuda.so": dockerHub,
+// };
+const routes = {
+  "docker.yang17.site": "https://registry-1.docker.io",
+  "quay.yang17.site": "https://quay.io",
+  "gcr.yang17.site": "https://gcr.io",
+  "k8s-gcr.yang17.site": "https://k8s.gcr.io",
+  "k8s.yang17.site": "https://registry.k8s.io",
+  "ghcr.yang17.site": "https://ghcr.io",
+  "cloudsmith.yang17.site": "https://docker.cloudsmith.io",
 };
 
 function routeByHosts(host) {
